@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+<title>portfolio</title>
 </head>
 <body>
     <a name="TopOfThePage"> </a>
     
-<!-- header -->      
+<!-- HEADER -->      
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#Work">Work</a>
@@ -21,109 +26,133 @@
     </header>
 
 
-<!-- main section -->      
+<!-- MAIN SECTION -->      
     <main>
 
-<!-- about me section -->        
+<!-- ABOUT ME SECTION -->        
         <section>
             <a name="About"></a>
-            <div>
-                <h3>Quick words about me ..</h3>
-                <h1>AZEDDINE AIT TAAKAT</h1>
-                <p>Hello, Am Azeddine Web developer ..</p>
+            <div class="about_section">
+                <h3>Hello, My name ..</h3>
+                <h2>AZEDDINE <br> AIT TAAKAT</h2>
+                <p>Am a Web developer ..</p>
 
-                <div>
-                    <button>My projects</button>
-                </div>
+                <input type="submit" id="myprojects" value="My projects" />
             </div>
-
+            <br>
             <div>
-                <img src="images/IMG_2937.jpeg" alt="">
+                <img src="images/for_the_portfolio-removebg-preview.png" alt="">
             </div>
         </section>
 
-<!-- work section -->
+<!-- WORK SECTION -->
         <section>
             <a name="Work"></a>
-            <div>
+            <div class="mywork_words">
                 <h1>MY WORK</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt animi beatae <br> rerum eum aspernatur cumque facilis laudantium quam.</p>
             </div>
 
-            <div>
-                <i></i>
-                <h2>Front end</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Quos culpa sint molestiae alias quam <br> magnam cum ducimus quidem pariatur excepturi.</p>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Vuejs</li>
-                </ul>
-           
+            <div class="mywork_details">
 
-                <i></i>
-                <h2>Back end</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Quos culpa sint molestiae alias quam <br> magnam cum ducimus quidem pariatur excepturi.</p>
-                <ul>
-                    <li>Nodejs</li>
-                    <li>Php(Laravel, Symfony)</li>
+<!-- front end my work -->                
+                <div class="mywork_parts">
                     
-                </ul>
+                    <h3><i class="material-icons-outlined">design_services</i>Front end development</h3>                  
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
+                    <ul>
+                        <li>Html,Css,Javascript</li>
+                        <li>React</li>
+                        <li>Vuejs</li>
+                    </ul>
 
-                <i></i>
-                <h2>Wordpress Websites</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Quos culpa sint molestiae alias quam <br> magnam cum ducimus quidem pariatur excepturi.</p>
+                </div>
+
+<!-- back end my work -->
+                <div class="mywork_parts">
+                    
+                    <h3><i class="material-icons-outlined">laptop_windows</i>Back end development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
+                    <ul>
+                        <li>Nodejs</li>
+                        <li>Php(Laravel, Symfony)</li>
+                    </ul>
+
+                </div>
+
+<!-- wordpress my work -->                
+                <div class="mywork_parts">
+                    
+                    <h3><i class="material-icons-outlined">devices</i>Wordpress Websites</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
+                </div>
+
             </div>  
         </section>
 
 
-<!-- Resume section -->
-        <section>
+<!-- RESUME SECTION -->
+      <center>
+      <section>
             <a name="Resume"></a>
-            <h1>RESUME</h1>
-            <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/WdMPKupODo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
 
-            <br />
-            <audio controls>
-                <source src="audio/Create your first websiet from scratch - GOMYCODE.mp3" type="audio/mpeg">
-            </audio>
+            <div class="resume_section">
+                <h1>RESUME</h1>
+                <iframe 
+                    width="1060" 
+                    height="455" 
+                    src="https://www.youtube.com/embed/WdMPKupODo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+
+                <br />
+                <audio controls>
+                    <source src="audio/Create your first websiet from scratch - GOMYCODE.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </section>
+       </center>  
 
 
-<!-- contact section -->
+<!-- CONTACT SECTION -->
+
+
         <section>
             <a name="Contact"></a>
-            <h1>CONTACT</h1>
 
-            <form>
-                <label>Full Name:</label>
-                <input type="text" name="first name" placeholder="Type your full name here" />
-                <br />
-        
-                <label>Phone Number:</label>
-                <input type="text" name="phonenumber" placeholder="+212 00 00 00 00"  />
-                <br />
-        
-                <label>Email:</label>
-                <input type="email" name="email" placeholder="Type your Email here" />
-                <br />
-        
-                <label>Mesage:</label>
-                <br />
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Feel free.."></textarea>
-                <br />
-        
-                <input type="submit" value="Send" />
-            </form>
+            <div class="contact_section">
+               <h1>CONTACT</h1>
+
+                <form>
+                    <label>Full Name:</label>
+                    <br>
+                    <input class="contact_section_inputs" type="text" name="first name" placeholder="Type your full name here" />
+                    <br />
+            
+                    <label>Phone Number:</label> 
+                    <br>
+                    <input class="contact_section_inputs" type="text" name="phonenumber" placeholder="+212 00 00 00 00"  />
+                    <br />
+            
+                    <label>Email:</label>
+                    <br>
+                    <input class="contact_section_inputs" type="email" name="email" placeholder="Type your Email here" />
+                    <br />
+            
+                    <label>Message:</label>
+                    <br>
+                    <textarea class="contact_section_inputs" name="message" id="" cols="128" rows="10" placeholder="Feel free.."></textarea>
+                    <br />
+            
+                    <input type="submit" id="contact_send" value="Send" />
+                </form>
+            </div>
         </section>
 
-        <a href="#TopOfThePage"> Back to the top </a>
+
+        <div class="topOfThePage">
+            <a href="#TopOfThePage" > <i class="material-icons-outlined">arrow_upward</i></a>
+        </div> 
+
     </main>
 
     <footer>
