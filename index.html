@@ -4,160 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
-<title>portfolio</title>
+    <title>Azeddine Ait taakat</title>
 </head>
 <body>
-    <a name="TopOfThePage"> </a>
-    
-<!-- HEADER -->      
+
     <header>
-        <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Work">Work</a>
-            <a href="#Resume">Resume</a>
-            <a href="#Contact">Contact</a>
+        <a href="#" class="logo">Azeddine</a>
+        <nav class="navigation">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>   
         </nav>
+
+        <div>
+            <a href="#contact" id="aContact">Contact</a>
+        </div>
     </header>
 
+    <!-- MAIN SECTION -->
 
-<!-- MAIN SECTION -->      
-    <main>
-
-<!-- ABOUT ME SECTION -->        
-        <section>
-            <a name="About"></a>
-            <div class="about_section">
-                <h3>Hello, My name ..</h3>
-                <h2>AZEDDINE <br> AIT TAAKAT</h2>
-                <p>Am a Web developer ..</p>
-
-                <input type="submit" id="myprojects" value="My projects" />
-            </div>
-            <br>
+    <section class="main" id="main">
+        <div class="maind">
             <div>
-                <img src="images/for_the_portfolio-removebg-preview.png" alt="">
+                <h2>Hello, My name is..<br><span>AZEDDINE AIT TAAKAT</span></h2>
+                <h3>Am a Web Developer</h3>
+                <a href="#projects" class="main-btn">See My Projects</a>
+                <a href="#projects" id="touch-button">Get In Touch</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </section>
-
-<!-- WORK SECTION -->
-        <section>
-            <a name="Work"></a>
-            <div class="mywork_words">
-                <h1>MY WORK</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt animi beatae <br> rerum eum aspernatur cumque facilis laudantium quam.</p>
+            <div id="my_picture">
+                <img src="images/the new.png" alt="">
             </div>
+        </div>
+    </section>
 
-            <div class="mywork_details">
 
-<!-- front end my work -->                
-                <div class="mywork_parts">
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2 class="title">Quick Words About Me ..</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur dolor, nihil dicta blanditiis ad incidunt 
+            rerum magni atque reprehenderit, adipisci voluptas cumque pariatur corporis!</h3>
+            rerum magni atque reprehenderit, adipisci voluptas cumque pariatur corporis!</h3>
+
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="cards" id="services" style="padding-top: 0;">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Back end <br> Coding</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsum et dolores asperiores deserunt veniam </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Front end Development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsum et dolores asperiores deserunt veniam </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-brands fa-wordpress-simple"></i>
+                </div>
+                <div class="info">
+                    <h3>Wordpress Websites </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ipsum et dolores asperiores deserunt veniam </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section class="skills">
+        <div class="skill">
+
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="title" style="color: white;">Projects</h2>
+        <h3>Here's a list of most of the projects I've been working on lately. Lorem, ipsum dolor sit amet consectetur adipisicing.
+            <br> Here's a list of most of the projects I've been working on lately. Lorem, ipsum dolor   .
+        </h3>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/docplanner.webp" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Building Website's Front-end</p>
+                    <strong class="project-title">
+                        <span>Docplanner Website</span>
+                        
+                    </strong>
+                    <a href="#" class="more-details">See Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/health.webp" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Health Project</p>
+                    <strong class="project-title">
+                        <span>Xyz Hospital</span>
+                    </strong>
+                        <a href="#" class="more-details">See Project</a>
                     
-                    <h3><i class="material-icons-outlined">design_services</i>Front end development</h3>                  
-                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
-                    <ul>
-                        <li>Html,Css,Javascript</li>
-                        <li>React</li>
-                        <li>Vuejs</li>
-                    </ul>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/téléchargement.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Shopping Cart for Ecom Website</p>
+                    <strong class="project-title">
+                        <span>Shopping cart</span>
+                    </strong>
+                        <a href="#" class="more-details">See Project</a>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/potfolio.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Portfolio Website</p>
+                    <strong class="project-title">
+                        <span>Portfolio</span>
+                    </strong>
+                        <a href="#" class="more-details">See Project</a>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/to do list.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">To do/ Task List Project</p>
+                    <strong class="project-title">
+                        <span>Task list</span>
+                    </strong>
+                        <a href="#" class="more-details">See Project</a>
+                    
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img style="width: 80%; margin-left: 25px;" src="images/products.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Products Management Project</p>
+                    <strong class="project-title">
+                        <span>Products Management</span>
+                    </strong>                        
+                    <a href="#" class="more-details">See Project</a>
 
                 </div>
-
-<!-- back end my work -->
-                <div class="mywork_parts">
-                    
-                    <h3><i class="material-icons-outlined">laptop_windows</i>Back end development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
-                    <ul>
-                        <li>Nodejs</li>
-                        <li>Php(Laravel, Symfony)</li>
-                    </ul>
-
-                </div>
-
-<!-- wordpress my work -->                
-                <div class="mywork_parts">
-                    
-                    <h3><i class="material-icons-outlined">devices</i>Wordpress Websites</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing  elit. Quos culpa sint mo <br> lestiae alias quam  magnam cum <br> ducimus quidem pariatur excepturi.</p>
-                </div>
-
-            </div>  
-        </section>
-
-
-<!-- RESUME SECTION -->
-      <center>
-      <section>
-            <a name="Resume"></a>
-
-            <div class="resume_section">
-                <h1>RESUME</h1>
-                <iframe 
-                    width="1060" 
-                    height="455" 
-                    src="https://www.youtube.com/embed/WdMPKupODo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-
-                <br />
-                <audio controls>
-                    <source src="audio/Create your first websiet from scratch - GOMYCODE.mp3" type="audio/mpeg">
-                </audio>
             </div>
-        </section>
-       </center>  
+        </div>
+    </section>
 
+    <!-- CONTACT SECTION -->
 
-<!-- CONTACT SECTION -->
-
-
-        <section>
-            <a name="Contact"></a>
-
-            <div class="contact_section">
-               <h1>CONTACT</h1>
-
-                <form>
-                    <label>Full Name:</label>
-                    <br>
-                    <input class="contact_section_inputs" type="text" name="first name" placeholder="Type your full name here" />
-                    <br />
-            
-                    <label>Phone Number:</label> 
-                    <br>
-                    <input class="contact_section_inputs" type="text" name="phonenumber" placeholder="+212 00 00 00 00"  />
-                    <br />
-            
-                    <label>Email:</label>
-                    <br>
-                    <input class="contact_section_inputs" type="email" name="email" placeholder="Type your Email here" />
-                    <br />
-            
-                    <label>Message:</label>
-                    <br>
-                    <textarea class="contact_section_inputs" name="message" id="" cols="128" rows="10" placeholder="Feel free.."></textarea>
-                    <br />
-            
-                    <input type="submit" id="contact_send" value="Send" />
-                </form>
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's be in touch </h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+212 677 73 09 78</p>
+                </div>
             </div>
-        </section>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>azeddineaittaakat1r@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-
-        <div class="topOfThePage">
-            <a href="#TopOfThePage" > <i class="material-icons-outlined">arrow_upward</i></a>
-        </div> 
-
-    </main>
-
-    <footer>
-        <p>Copywrite@az.wf</p>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>AZEDDINE AIT TAAKAT</span></p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
 </body>

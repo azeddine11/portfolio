@@ -1,168 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(248, 248, 248);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
 }
 
 
-h1 {
-    text-align: center;
-    font-size: 40px;
+header {
+    background-color: #000000af;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
 }
 
-/* navbar */
-
-.navbar {
-    padding: 25px 0;
-}
-
-.navbar a {
-    display: inline;
+.logo{
     text-decoration: none;
-    color: black;
-    padding: 20px;
-    font-size: 17px;
-    transition: 0.7s;
-}
-
-.navbar a:hover {
-    color: rgb(86, 138, 173);
-    letter-spacing: 3px;
-    font-size: 18px;
-}
-
-
-/* about_section */
-
-.about_section h3{
-    font-size: 20px;
-    color: rgb(161, 161, 161);
-}
-
-.about_section h2{
-    font-size: 60px;
-    font-weight: 800;
-    letter-spacing: 4px;
-}    
-
-.about_section p {
-    font-size: 30px;
+    color: #3a6cf4;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 4px;
-    color: rgb(161, 161, 161);
+    font-size: 1.8em;
 }
 
-.about_section #myprojects{
-    background-color: rgb(86, 138, 173);
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 8px 50px;
-    border: 1px solid white;
-    border-radius: 50px;
-    transition: 0.7s;
-}
-
-.about_section #myprojects:hover {
-    background-color: rgb(86, 173, 98);
-    letter-spacing: 3px;
-}
-
-
-/* my work section */
-
-.mywork_words p{
-    text-align: center;
-    line-height: 1.6;
-    font-size: 17px;
-
-}
-
-.mywork_details i{
-    color: rgb(86, 138, 173);
-    font-size: 30px;
-    margin: 10px;
-}
-
-
-.mywork_details h3 {
-    color: rgb(86, 138, 173);
-    letter-spacing: 2px;
-    word-spacing: 3px;
-    font-size: 25px;
+.navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .9em;
     font-weight: 500;
+    padding-left: 30px;
+    transition: 0.7s;
+}
 
+#aContact {
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 5px 20px;
+    transition: 0.7s;
+}
+
+#aContact:hover{
+    background-color: #3a6cf4;;
+    letter-spacing: 2px;
+}
+
+.navigation a:hover{
+    color: #3a6cf4;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    min-height: 100vh;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),url(images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    margin-right: 10px;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    word-spacing: 3px;
+}
+
+#touch-button {
+    color: #3a6cf4;
+    background-color: white;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+#touch-button:hover {
+    transform: scale(1.1);
+    word-spacing: 3px;
 }
 
 
-/* Resume */
-
-
-/* contact section */
-
-
-.contact_section input{
-    width: 60%;
-    height: 40px;
-    margin: 10px; 
+.maind {
+    display: flex;
+    justify-content: space-between;
 }
 
-textarea {
+#my_picture img{
+    width: 470px;
+    height: 340px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 50%;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s;
+}
+
+.social-icons a:focus {
+    color: #3a6cf4;
+}
+
+/* ABout section */
+
+.about h3{
+    font-weight: 400;
+
+}
+/* services part */
+
+
+#services {
+    background: linear-gradient(rgba(255, 255, 255, 0.788), rgba(255, 255, 255, 0.788)),url(images/arnold-francisca-f77Bh3inUpE-unsplash-removebg-preview.png)no-repeat;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 15em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #85a1ee;
+    font-size: 3em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #85a1ee;
+    font-size: 1.2em;
+    font-weight: 600;
     margin: 10px;
 }
 
-#contact_send {
-    background-color: rgb(86, 138, 173);
+
+/* projects section */
+.projects {
+    /* background-color: #000016; */
+    background: url(images/fotis-fotopoulos-SyvsTmuuZyM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.projects .content{
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.projects h3 {
     color: white;
+    font-weight: 300;
     font-size: 16px;
+    text-align: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 3px;
-    padding: 8px 50px;
-    border: 1px solid white;
-    border-radius: 50px;
-    transition: 0.7s;
-
+    margin-top: 10px;
 }
 
-#contact_send:hover {
-    background-color: rgb(86, 173, 98);
-    font-size: 18px;
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+    width: 9em;
+    
 }
 
-.contact_section .contact_section_inputs {
-    border-radius: 5px;
-    border: 1px solid rgb(252, 252, 252);
-    background-color: rgb(168, 168, 168);
-    padding: 5px;
-    cursor: pointer;
-    transition: 0.7s;
+.more-details:hover {
+    color: #601cfc;
 }
 
-.contact_section .contact_section_inputs:focus {
-    background-color: rgb(255, 255, 255);
+/* contact */
 
+.contact .card {
+    width: 32em;
 }
 
-/* topof thepage button */
-
-.topOfThePage i{
-    background-color: rgb(86, 138, 173);
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    border-radius: 50px;
-    transition: 0.7s;
+.contact .icon{
+    font-size: 3em;
 }
 
-.topOfThePage i:hover {
-    background-color: rgb(86, 173, 98);
+.contact .info h3 {
+    color: #000;
 }
+
+.contact .info p {
+    font-size: 1em;
+}
+
 
 /* footer */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: .7em;
+    display: flex;
+    justify-content: space-between;
+}
 
-footer p{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    word-spacing: 4px;
-    letter-spacing: 2px;
+.footer-title {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+
+    #my_picture img{
+        height: 200px;
+        width: 220px;
+  
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+
+    #my_picture img{
+        height: 200px;
+        width: 220px;
+  
+    }
 }
